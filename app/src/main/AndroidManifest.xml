@@ -17,6 +17,8 @@
         </activity>
         <activity android:name=".signUp" >
         </activity>
+        <activity android:name=".inlog" >
+        </activity>
     </application>
 
 </manifest>
