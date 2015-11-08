@@ -10,7 +10,7 @@ import android.widget.Toast;
 public class signUp extends AppCompatActivity {
     EditText firstname,lastname,mobile,password;
     dbmsAdapter help;
-    Button signup;
+    Button sup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +20,7 @@ public class signUp extends AppCompatActivity {
         lastname=(EditText)findViewById(R.id.editLastName);
         mobile=(EditText)findViewById(R.id.editMobileNo);
         password=(EditText)findViewById(R.id.editPassword);
-        signup=(Button)findViewById(R.id.signUp);
+        sup=(Button)findViewById(R.id.signUp);
         help=new dbmsAdapter(this);
 
     }
@@ -29,7 +29,7 @@ public class signUp extends AppCompatActivity {
         String f= firstname.getText().toString();
         String l= lastname.getText().toString();
         String p = password.getText().toString();
-        Integer m = Integer.parseInt(mobile.getText().toString());
+        long m = Long.parseLong(mobile.getText().toString());
         Long id = help.insertData(f,l,p,m);
 
         if(id<0){

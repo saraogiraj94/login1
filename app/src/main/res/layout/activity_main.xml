@@ -30,4 +30,14 @@
         android:layout_toEndOf="@+id/signUp"
         android:onClick="login"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get All Data"
+        android:id="@+id/getAll"
+        android:layout_below="@+id/signUp"
+        android:layout_centerHorizontal="true"
+        android:onClick="getAll"
+        android:layout_marginTop="67dp" />
 </RelativeLayout>
